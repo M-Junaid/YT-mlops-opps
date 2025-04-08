@@ -11,22 +11,23 @@ class Chatbook:
                            2. Press 2 to singin
                            3. Press 3 to write a post
                            4. Press 4 to message a friend
-                           5. Press any other key to exit""")
+                           5. Press any other key to exit
+                           -> """)
         
         if user_input == '1':
             self.singup()
         elif user_input == '2':
             self.singin()
         elif user_input == '3':
-            pass
+            self.my_post()
         elif user_input == '4':
-            pass
+            self.sendmsg()
         else:
             exit()
 
 
     def singup(self):
-        email = input('Enter your email')
+        email = input('Enter your email -> ')
         password = input('Enter your password')
         self.username = email
         self.password = password
@@ -48,11 +49,32 @@ class Chatbook:
 
         print("\n")
         self.menu()
+
+    def my_post(self):
+        if self.loggin == True:
+            txt = input('Enter your message here -> ')
+            print(f'your message has been posted{txt} ->')
+        else:
+            print('You need to signin to post a message')
+
+        print("\n")
+        self.menu()
+    
+    def sendmsg(self):
+        if self.loggin == True:
+            txt = input('Enter your message here')
+            frnd = input('whom to send the message')
+            print(f'your message has been sent to {frnd}')
+        else:
+            print('You need to sign to send a message')
+
+        print("\n")
+        self.menu()
                 
             
 
 
-obj = Chatbook()   
+#uaer1 = Chatbook()   
 
 
 
