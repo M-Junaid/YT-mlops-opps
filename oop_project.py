@@ -14,15 +14,43 @@ class Chatbook:
                            5. Press any other key to exit""")
         
         if user_input == '1':
-            pass
+            self.singup()
         elif user_input == '2':
-            pass
+            self.singin()
         elif user_input == '3':
             pass
         elif user_input == '4':
             pass
         else:
             exit()
+
+
+    def singup(self):
+        email = input('Enter your email')
+        password = input('Enter your password')
+        self.username = email
+        self.password = password
+        print('You have successfully signed up')
+        print("\n")
+        self.menu()
+
+    def singin(self):
+        if self.username == '' and self.password == '':
+            print('Please singup first by pressing 1 in the main menu')
+        else:
+            uname = input('Enter your email/username')
+            pword = input('Enter your password')
+            if self.username == uname and self.password == pword:
+                print('You have successfully signed in')
+                self.loggin = True
+            else:
+                print('Invalid username or password')
+
+        print("\n")
+        self.menu()
+                
+            
+
 
 obj = Chatbook()   
 
