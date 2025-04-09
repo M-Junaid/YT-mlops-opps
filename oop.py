@@ -14,10 +14,19 @@ class Employee:
 
 # create an obj/instance of class
 sam = Employee()
+# sam.name = 'junaid' 
+# print(id(sam))
+# print(sam.name)
 
 # printing the attributes
 # print(sam.salary)
 
 # calling the method
 # sam.travel("London")
-print(type(sam))
+# print(type(sam))
+
+
+# junaid = Employee()
+# print(id(junaid))
+
+

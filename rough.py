@@ -7,6 +7,31 @@
 # print(type(lst))
 
 from oop_project import Chatbook
+user1 = Chatbook()
+print(user1.id)
+
+# using static method directly from class rather than obj 
+# Chatbook.set_id(10)
+
+# user2 = Chatbook()
+# print(user2.id)
+
+# user3 = Chatbook()
+# print(user3.id)
+
+# getter and setter
+# print(user1.get_name())
+# user1.set_name('Junaid aslam')
+# print(user1.get_name())
 
 
-uaer1 = Chatbook()
+# # function vs method below
+# lst = [1,2,3,4]
+
+# # function
+# a1 = len(lst)
+
+# print(a1)
+
+# user1 = Chatbook()
+# user1.sendmsg()
